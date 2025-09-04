@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "AdSpinner AI",
+    "subtitle": "Built with Zara",
+    "description": "AdSpinner AI is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://c7c41788319f45299028fcbe70e2b857-qqer-5agl1820e-vistara.vercel.app",
+    "splashImageUrl": "https://c7c41788319f45299028fcbe70e2b857-qqer-5agl1820e-vistara.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://c7c41788319f45299028fcbe70e2b857-qqer-5agl1820e-vistara.vercel.app/image.png",
+    "tagline": "AdSpinner AI",
+    "screenshotUrls": [
+      "https://c7c41788319f45299028fcbe70e2b857-qqer-5agl1820e-vistara.vercel.app/screenshot.png",
+      "https://c7c41788319f45299028fcbe70e2b857-qqer-5agl1820e-vistara.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://c7c41788319f45299028fcbe70e2b857-qqer-5agl1820e-vistara.vercel.app/api/webhook"
+  }
+}
