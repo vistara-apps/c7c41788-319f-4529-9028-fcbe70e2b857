@@ -98,7 +98,6 @@ export default function AppShell({ children }: AppShellProps) {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <ConnectWallet 
-              withWalletAggregator={true}
               text="Connect Wallet"
             />
           </motion.div>

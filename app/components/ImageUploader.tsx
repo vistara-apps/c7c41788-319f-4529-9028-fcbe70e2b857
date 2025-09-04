@@ -59,11 +59,9 @@ export default function ImageUploader({ onImageUpload, uploadedImage }: ImageUpl
         </p>
 
         {!uploadedImage ? (
-          <motion.div
+          <div
             {...getRootProps()}
             className={`dropzone ${isDragActive ? 'active' : ''}`}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
           >
             <input {...getInputProps()} />
             
@@ -108,7 +106,7 @@ export default function ImageUploader({ onImageUpload, uploadedImage }: ImageUpl
                 )}
               </>
             )}
-          </motion.div>
+          </div>
         ) : (
           <motion.div
             className="relative group"
