@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 12% 96%;
+    --accent: 34 95% 55%;
+    --primary: 222 88% 45%;
+    --surface: 0 0% 100%;
+    --text-primary: 220 13% 18%;
+    --text-secondary: 220 13% 38%;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-text-primary;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .app-shell {
+    @apply min-h-screen bg-gradient-to-br from-primary via-purple-800 to-accent;
+  }
+  
+  .content-container {
+    @apply max-w-xl px-4 mx-auto py-6;
+  }
+  
+  .card {
+    @apply bg-surface rounded-lg shadow-card p-6;
+    border-color: rgb(255 255 255 / 0.1);
+  }
+  
+  .button-primary {
+    @apply bg-gradient-brand text-white font-semibold py-3 px-6 rounded-lg;
+    @apply hover:opacity-90 transition-opacity duration-200 ease-in-out;
+  }
+  
+  .button-secondary {
+    @apply bg-surface text-text-primary border rounded-lg py-3 px-6;
+    @apply hover:bg-gray-50 transition-colors duration-200 ease-in-out;
+    border-color: rgb(220 13% 38% / 0.2);
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 rounded-md bg-surface border;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary;
+    border-color: rgb(220 13% 38% / 0.2);
+  }
+  
+  .floating-elements {
+    @apply absolute inset-0 overflow-hidden pointer-events-none;
+  }
+  
+  .floating-shape {
+    @apply absolute animate-pulse-glow;
+  }
+}
+
+.dropzone {
+  @apply border-2 border-dashed rounded-lg p-8 text-center;
+  @apply border-primary/30 bg-primary/5 hover:border-primary/50;
+  @apply transition-colors duration-200 ease-in-out cursor-pointer;
+}
+
+.dropzone.active {
+  @apply border-accent bg-accent/10;
+}
+
+.ad-card {
+  @apply relative overflow-hidden rounded-lg shadow-card bg-surface;
+  @apply hover:shadow-modal transition-shadow duration-200 ease-in-out;
+}
+
+.credit-badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  @apply bg-accent/10 text-accent;
+}
+
+.performance-ring {
+  @apply relative w-24 h-24 rounded-full;
+}
